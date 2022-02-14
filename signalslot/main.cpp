@@ -1,15 +1,10 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include<signaltest.h>
+#include<mainmenu.h>
+#include<mainview.h>
 
 int main(int argc, char *argv[])
 {
-    signaltest app(argc, argv);
-//    QGuiApplication app(argc, argv);
-//    QQmlApplicationEngine engine;
-//    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-//    if (engine.rootObjects().isEmpty())
-//        return -1;
-
+    mainmenu app(argc, argv);
     return app.exec();
 }
