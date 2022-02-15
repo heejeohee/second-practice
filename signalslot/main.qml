@@ -27,7 +27,7 @@ Item{
         id : mytext
         x : 100
 
-        text : "1"
+        text : num  // 바인딩 되어있어서 num 변하면 윈도우의 텍스트도 바뀜
     }
 }
 
