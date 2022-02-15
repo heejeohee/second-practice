@@ -3,13 +3,12 @@
 #include <QGuiApplication>
 #include <QQuickView>
 #include <QObject>
+#include <QDebug>
 
 class Mainview : public QQuickView{
 Q_OBJECT
 public:
     Mainview();
-//    Q_INVOKABLE void testfunc();
-public slots:
-    void qmlslot(int getnum);
+    Q_INVOKABLE void testfunc(int);
 };
 #endif // SIGNALTEST_H
