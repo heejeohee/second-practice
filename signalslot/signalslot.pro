@@ -14,6 +14,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     mainmenu.cpp \
+    mainviewctrl.cpp \
+    mainmenu.cpp \
     mainview.cpp
 
 RESOURCES += qml.qrc
@@ -30,5 +32,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    mainmenu.h \
+    mainviewctrl.h \
     mainmenu.h \
     mainview.h

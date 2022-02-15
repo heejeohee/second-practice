@@ -1,17 +1,16 @@
 #ifndef MAINMENU_H
 #define MAINMENU_H
 #include <QGuiApplication>
-#include <mainview.h>
 #include <QQuickItem>
-#include<QObject>
+#include "mainviewctrl.h"
 
-class mainmenu : public QGuiApplication
+class MainMenu : public QGuiApplication
 {
 public:
-    mainmenu(int &, char **);
+    MainMenu(int &, char **);
+    MainViewctrl* m_pMainViewctral;
     void init();
     void showqml();
-    Mainview *m_pQuickview;
 };
 
 #endif // MAINMENU_H

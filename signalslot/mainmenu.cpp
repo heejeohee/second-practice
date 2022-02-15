@@ -1,17 +1,13 @@
 #include "mainmenu.h"
 
-mainmenu::mainmenu(int &argc, char *argv[]) : QGuiApplication(argc, argv)
+MainMenu::MainMenu(int &argc, char *argv[]) : QGuiApplication(argc, argv)
 {
     init();
     showqml();
 }
-void mainmenu::init(){
-
-   qmlRegisterType<Mainview>("hello", 1, 0, "Mainview");
-    m_pQuickview = new Mainview();
-
-    m_pQuickview->setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+void MainMenu::init(){
+    m_pMainViewctral = new MainViewctrl();
 }
-void mainmenu::showqml(){
-    m_pQuickview->show();
+void MainMenu::showqml(){
+    m_pMainViewctral->getViewPtr()->show();
 }
